@@ -1,0 +1,221 @@
+/* WebHaste Classroom Starter (Plain HTML/CSS)
+   Keep it simple, readable, and easy to modify. */
+
+
+/* ##########################################
+   #     VARIABLES AND SITE DEFINITIONS     #
+   ########################################## */
+
+:root {
+  --max-width: 900px;
+  --text: #1b1b1b;
+  --muted: #555;
+  --bg: #ffffff;
+  --border: #e6e6e6;
+  --link: #2f686a;
+  --link-hover: #214a4b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+
+
+/* ##########################################
+   #    DEFAULT LAYOUT/PHONE VIEW STYLES    #
+   ########################################## */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+
+.site-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+main {
+  padding: 22px 0 34px;
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 14px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Accessibility skip link hidden for visual layouts */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  display: inline-block;
+  border: 2px solid var(--link);
+  margin: 8px;
+}
+
+
+/* ##########################################
+   #      WEBHASTE SITE SEARCH STYLES       #
+   ########################################## 
+   
+   Optional feature - remove these classes if not using
+   see docs/search.html or README's "Site search" section.
+   #cs-search-input/#cs-search-results are the two elements search.js looks
+   for; the cs-search-* classes below are what it renders results into.*/
+
+.cs-search-wrap {
+  position: relative;
+  min-width: 200px;
+}
+
+#cs-search-input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+#cs-search-results:empty {
+  display: none;
+}
+
+#cs-search-results {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 4px;
+  width: 200%;
+  max-width: calc(100vw - 2rem);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1050;
+}
+
+.cs-search-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.cs-search-item {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.cs-search-item:last-child {
+  border-bottom: none;
+}
+
+.cs-search-item a {
+  font-weight: 600;
+  color: inherit;
+}
+
+.cs-search-item p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #555;
+}
+
+.cs-search-empty {
+  padding: 10px 14px;
+  margin: 0;
+  color: #555;
+}
+
+
+/* ##########################################
+   #       RESPONSIVE BREAKPOINTS           #
+   ##########################################
+
+Default styles above should be mobile first, and then change
+as needed for larger screens 
+These match Bootstrap 5's breakpoints */
+
+/*Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+}
+
+/* XL devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
+
+/* XXL devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  
+}
+
+/* Print-only overrides */
+@media print {
+
+}

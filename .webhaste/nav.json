@@ -1,0 +1,18 @@
+{
+  "menus": {
+    "header": [
+      {
+        "label": "Home",
+        "href": "/index.html"
+      },
+      {
+        "label": "About",
+        "href": "/about.html"
+      },
+      {
+        "label": "Sources",
+        "href": "/sources.html"
+      }
+    ]
+  }
+}

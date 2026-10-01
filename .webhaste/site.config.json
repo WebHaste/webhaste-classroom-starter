@@ -1,0 +1,11 @@
+{
+  "siteName": "My Project",
+  "domain": "",
+  "paragraphMode": "p",
+  "activeTemplate": "project-layout.html",
+  "cssFramework": "none",
+  "language": "en",
+  "deploymentTarget": "packaged",
+  "deployDirectory": "dist",
+  "projectId": "ed8dbc9b-101c-488a-99b2-9237f5efd8f1"
+}
